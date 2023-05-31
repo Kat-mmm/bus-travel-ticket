@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Bus Travel Ticket</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Travel Widget</h1>
+        <div class="inputs">
+            <div class="form-group">
+                <label for="points">Points: </label>
+                <input type="text" id="points" name="points" placeholder="Enter points">
+            </div>
+            <div class="form-group">
+                <label for="start-location">Start Location:</label>
+                <select id="start-location">
+                    <option value="">Select start location</option>
+                    <option value="Khayelitsha">Khayelitsha</option>
+                    <option value="Dunoon">Dunoon</option>
+                    <option value="Mitchells Plain">Mitchells Plain</option>
+                </select>
+            </div>
+        </div>
+        <h2>Travel Times</h2>
+        <div class="middle-screen">
+            <div class="left">
+                <label for="peak"><input type="radio" id="peak" name="time" value="peak">Peak</label>
+
+                <label for="off-peak"><input type="radio" id="off-peak" name="time" value="off-peak">Off-Peak</label>
+            </div>
+
+            <div class="right">
+                <label for="return-trip"><input type="checkbox" id="return-trip" name="return-trip">Return Trip</label>
+                
+
+                <button class="calculate-btn">Calculate</button>
+            </div>
+        </div>
+        <h2>Calculations</h2>
+        <div class="results">
+            <div class="result">
+                <label for="num-single-trips">Number of single trips: </label>
+                <input type="text" id="num-single-trips" name="num-single-trips">
+            </div>
+
+            <div class="result">
+                <label for="price-per-trip">Price per trip(single): </label>
+                <input type="text" id="price-per-trip" name="price-per-trip">
+            </div>
+
+            <div class="result">
+                <label for="num-return-trips">Number of Return Trips: </label>
+                <input type="text" id="num-return-trips" name="num-return-trips">
+            </div>
+
+            <div class="result">
+                <label for="price-per-trip">Price per trip(return): </label>
+                <input type="text" id="price-per-trip" name="price-per-trip">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
