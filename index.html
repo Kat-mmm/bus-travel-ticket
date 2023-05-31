@@ -27,15 +27,13 @@
         <h2>Travel Times</h2>
         <div class="middle-screen">
             <div class="left">
-                <label for="peak"><input type="radio" id="peak" name="time" value="peak">Peak</label>
-
-                <label for="off-peak"><input type="radio" id="off-peak" name="time" value="off-peak">Off-Peak</label>
+                <label for="peak"><input type="radio" class="travel-time" id="peak" name="time" value="peak">Peak</label>
+                <label for="off-peak"><input type="radio" class="travel-time" id="off-peak" name="time" value="off-peak">Off-Peak</label>
             </div>
 
             <div class="right">
                 <label for="return-trip"><input type="checkbox" id="return-trip" name="return-trip">Return Trip</label>
                 
-
                 <button class="calculate-btn">Calculate</button>
             </div>
         </div>
@@ -58,10 +56,12 @@
 
             <div class="result">
                 <label for="price-per-trip">Price per trip(return): </label>
-                <input type="text" id="price-per-trip" name="price-per-trip">
+                <input type="text" id="price-per-return-trip" name="price-per-trip">
             </div>
         </div>
 
     </div>
+
+    <script src="./bus-travel.js"></script>
 </body>
 </html>
