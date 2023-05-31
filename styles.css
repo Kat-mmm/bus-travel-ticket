@@ -10,6 +10,7 @@ body{
     display: grid;
     place-items: center;
     font-family: sans-serif;
+    background-color: #0336ff;
 }
 
 /* *{
@@ -21,7 +22,10 @@ body{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #ffde03;
+    color: #424242;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .container h2, h1{
@@ -43,18 +47,37 @@ body{
 .form-group input, .result input{
     width: 70%;
     padding: 5px;
+    background-color: #e0e0e0;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .form-group select{
     width: 70%;
     padding: 5px;
     margin-top: -5px;
+    color: #424242;
+    background-color: #e0e0e0;
+    border-radius: 2px;
 }
 
 .middle-screen{
     display: flex;
     justify-content: space-between;
     width: 60%;
+}
+
+.middle-screen button{
+    background-color: transparent;
+    padding: 5px;
+    border: 1.5px solid #ff0266;
+    border-radius: 5px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.middle-screen button:hover{
+    cursor: pointer;
 }
 
 .right, .left{
